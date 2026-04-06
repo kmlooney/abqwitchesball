@@ -8,38 +8,52 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/abqwitchesball.styles.css" asp-append-version="true" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Freckle+Face&display=swap" rel="stylesheet">
 </head>
+<style>
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    ul{
+        list-style-type:none;
+    }
+</style>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">abqwitchesball</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <h1>
+            <p class="caudex-regular" style="background-color: black;color:white;">Albuquerque Witches Ball 2026</a></p>
+        </h1>
+        
     </header>
+    
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2026 - abqwitchesball - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer class="footer text-muted caudex-regular">
+        <div style="background-color: black;color: white;" class="container">
+            <table cellspacing="5" cellpadding="5">
+                <tr>
+                    <td><a href="http://www.instagram.com/abqwitchesball" target="_blank">
+                                <img src="img/instagram.png" alt="Instagram" />
+                            </a>
+                        </td><td>
+                            <a href="https://www.facebook.com/ABQWitchesBall?mibextid=ZbWKwL" target="_blank">
+                                <img src="img/facebook-1.png" alt="Facebook" />
+                            </a></td><td>
+                            <a href="mailto:witchesballabq@gmail.com" target="_blank">
+                                <img src="img/email.png"
+                                     alt="Email" />
+                            </a></td>
+                </tr>
+            </table><br />
+            
+            <p>&copy; 2026 - abqwitchesball </p>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
